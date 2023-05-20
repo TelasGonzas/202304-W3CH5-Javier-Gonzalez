@@ -10,8 +10,8 @@ export class Header extends Component {
 
   createTemplate() {
     return `
-    <header class="main-header">
-      <img src="./Pokemon-Logo-PNG.png" alt="Pokemon logo" width = 400 heigth = 600>
+    <header class="header">
+      <img class="logo" src="./Pokemon-Logo-PNG.png" alt="Pokemon logo" width = 400 heigth = 600>
     </header>
     `;
   }
