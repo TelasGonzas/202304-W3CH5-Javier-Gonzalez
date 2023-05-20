@@ -20,12 +20,3 @@ export abstract class Component {
     this.element.outerHTML = '';
   }
 }
-
-/**
- *
- * Componente -> template -> string `${}`
- *
- * selector
- *
- * string --- (parser) + RENDER ---> HTML
- */
