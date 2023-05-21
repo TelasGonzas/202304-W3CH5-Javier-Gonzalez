@@ -19,7 +19,7 @@ export class Card extends Component {
   }
 
   createTemplate() {
-    const list = this.pokemon.results
+    const list = this.pokemon
       .map(
         (item: any) => `
           <li class="pokemon">
