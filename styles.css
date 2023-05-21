@@ -36,7 +36,6 @@ html {
 }
 .pokemon-list .pokemon:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5921568627);
-  position: sticky;
   transform: scale(1.5);
   background-color: rgb(215, 208, 221);
 }
