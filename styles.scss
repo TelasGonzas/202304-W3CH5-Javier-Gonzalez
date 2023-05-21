@@ -12,23 +12,34 @@ html {
 
 .pokemon-list {
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 1.5rem;
   grid-row-gap: 1rem;
   text-align: center;
   list-style: none;
-  padding: 1rem;
+  padding: rem;
+  gap: 3rem;
 
   .pokemon {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    width: 150px;
     flex-wrap: wrap;
     align-content: space-around;
     align-items: center;
-    gap: 1rem;
     padding: 1rem;
     border: 3px rgb(133, 101, 130) solid;
+    height: 220px;
+    gap: 2rem;
+
+    &:hover {
+      box-shadow: 0 0 30px #00000097;
+      position: sticky;
+      transform: scale(1.5);
+      background-color: rgb(215, 208, 221);
+    }
 
     &__name {
       font-family: 'DotGothic16', sans-serif;
