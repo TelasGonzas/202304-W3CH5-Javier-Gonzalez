@@ -26,7 +26,6 @@ html {
   display: flex;
   flex-direction: column;
   width: 150px;
-  flex-wrap: wrap;
   align-content: space-around;
   align-items: center;
   padding: 1rem;
@@ -34,19 +33,28 @@ html {
   height: 220px;
   gap: 2rem;
 }
+.pokemon-list .pokemon__name {
+  font-family: "DotGothic16", sans-serif;
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+}
+.pokemon-list .pokemon__image {
+  margin-top: 1rem;
+}
+.pokemon-list .pokemon__type {
+  font-family: "DotGothic16", sans-serif;
+  display: none;
+}
 .pokemon-list .pokemon:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5921568627);
   transform: scale(1.5);
   background-color: rgb(215, 208, 221);
 }
-.pokemon-list .pokemon__name {
-  font-family: "DotGothic16", sans-serif;
-  font-size: 1.5em;
-  margin-bottom: 2rem;
-  color: rgb(0, 0, 0);
+.pokemon-list .pokemon:hover > .pokemon__image {
+  margin-top: -1rem;
 }
-.pokemon-list .pokemon__image {
-  margin-top: 1rem;
+.pokemon-list .pokemon:hover > .pokemon__type {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */
